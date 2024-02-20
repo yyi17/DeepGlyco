@@ -1,0 +1,28 @@
+H:
+  name: Hex
+  mass: 162.0528234
+  composition: 'C(6) H(10) O(5)'
+N:
+  name: HexNAc
+  mass: 203.0793725
+  composition: 'C(8) H(13) N(1) O(5)'
+A:
+  name: NeuAc
+  mass: 291.0954165
+  composition: 'C(11) H(17) N(1) O(8)'
+G:
+  name: NeuGc
+  mass: 307.0903311
+  composition: 'C(11) H(17) N(1) O(9)'
+F:
+  name: dHex
+  mass: 146.0579088
+  composition: 'C(6) H(10) O(4)'
+X:
+  name: Xyl
+  mass: 132.0422588
+  composition: 'C(5) H(8) O(4)'
+R:
+  name: HexA
+  mass: 176.0320881
+  composition: 'C(6) H(8) O(6)'

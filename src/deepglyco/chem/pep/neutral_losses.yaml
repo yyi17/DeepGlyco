@@ -1,0 +1,13 @@
+H2O:
+  name: Water
+  mass: 18.01056468346
+  composition: 'H(2) O'  
+NH3:
+  name: Ammonia
+  mass: 17.02654910112
+  composition: 'H(3) N'
+H3PO4:
+  name: 'Phosphoric acid'
+  mass: 97.976896
+  composition: 'H(3) P O(4)'
+  mod_specific: true

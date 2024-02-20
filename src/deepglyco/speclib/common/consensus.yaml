@@ -1,0 +1,9 @@
+min_replicates_combined: 3
+max_replicates_combined: 100
+use_score_weight: True
+
+replicate_similarity_threshold: 0.6
+peak_quorum: 0.6
+
+rt_difference_threshold: 10
+#discard_min_replicates: True

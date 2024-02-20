@@ -1,0 +1,31 @@
+data:
+  amino_acids:
+    encoding: onehot
+    symbol: [A, R, 'N', D, C, E, Q, G, H, I, L, K, M, F, P, S, T, U, W, 'Y', V]
+  modifications:
+    fixed: ['cC']
+    encoding: atoms
+    element: [H, C, 'N', O, P, S]
+  monosaccharides:
+    encoding: onehot
+    symbol: [H, 'N', A, G, F]
+
+model:
+  type: 'GlycoPeptideRTTreeLSTM'
+  hyperparams:
+    pep_lstm_hidden_size: 256
+    pep_lstm_num_layers: 2
+    pep_dropout: 0.25
+    gly_lstm_hidden_size: 256
+    gly_lstm_num_layers: 1
+    gly_dropout: 0.25
+
+training:
+  batch_size: 16
+  lr: 0.001
+  warmup: 5
+  scheduler:
+    type: "CosineAnnealingWarmRestarts"
+    args:
+      T_0: 45
+      T_mult: 2

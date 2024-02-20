@@ -1,0 +1,14 @@
+modifications:
+  Carbamidomethyl: c
+  Acetyl: ac
+  Oxidation: ox
+
+report_filter:
+  Rank:
+    '=': 1
+  GlyDecoy:
+    '=': 0
+  PepDecoy:
+    '=': 0
+  TotalFDR:
+    '<': 0.01

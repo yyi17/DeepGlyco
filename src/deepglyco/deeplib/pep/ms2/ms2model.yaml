@@ -1,0 +1,33 @@
+data:
+  amino_acids:
+    encoding: onehot
+    symbol: [A, R, 'N', D, C, E, Q, G, H, I, L, K, M, F, P, S, T, U, W, 'Y', V]
+  modifications:
+    fixed: ['cC']
+    encoding: atoms
+    element: [H, C, 'N', O, P, S]
+  charge: True
+
+  fragments:
+    fragment_type: ['b', 'y']
+    fragment_charge: [1, 2]
+    loss_type: ['H2O', 'NH3']
+    other: ignore
+
+model:
+  type: 'PeptideMS2BiLSTM'
+  hyperparams:
+    charge_dim: 2
+    lstm_hidden_size: 256
+    lstm_num_layers: 2
+    dropout: 0.25
+
+training:
+  batch_size: 64
+  lr: 0.001
+  warmup: 5
+  scheduler:
+    type: "CosineAnnealingWarmRestarts"
+    args:
+      T_0: 15
+      T_mult: 2

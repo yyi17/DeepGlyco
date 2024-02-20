@@ -1,0 +1,31 @@
+monosaccharides: ["H", "N", "A", "G", "F"]
+
+modifications:
+  Carbamidomethyl: c
+  Oxidation: ox
+
+report_filter:
+  "Glycan_type":
+    "!=": "High mannose"
+
+annotator:
+  peak_matching:
+    tolerance: 20
+    tolerance_unit: ppm
+    criteria: mostintense
+
+  fragments:
+    peptide_fragment_type: ["b", "y"]
+    peptide_fragment_glycan: ["", "$", "N(1)"]
+    peptide_fragment_charge: [1, 2]
+    glycan_fragment_type: ["Y", "B"]
+    glycan_reducing_end_fragment_charge: [1, 2, 3]
+    glycan_branch_fragment_charge: [1]
+
+  # Y_mass_shift: [-2.0, -1.0, 1.0, 2.0]
+
+spectrum_filter:
+  min_num_peptide_fragments: 5
+  min_num_fragments:
+    Y: 5
+    B: 2

@@ -1,0 +1,34 @@
+data:
+  amino_acids:
+    symbol: [A, R, 'N', D, C, E, Q, G, H, I, L, K, M, F, P, S, T, U, W, 'Y', V]
+  modifications:
+    fixed: ['cC']
+    symbol: ['ac', 'ox', 'de', 'pyg']
+  charge: True
+
+  fragments:
+    fragment_type: ['b', 'y']
+    fragment_charge: [1, 2]
+    loss_type: ['H2O', 'NH3']
+    other: ignore
+
+model: 
+  type: 'PeptideMS2BiLSTM'
+  hyperparams:
+    seq_embedding_dim: 10
+    mod_embedding_dim: 5
+    charge_dim: 1
+    lstm_hidden_size: 128
+    lstm_num_layers: 2
+    dropout: 0.25
+
+training:
+  batch_size: 64
+  lr: 0.001
+  warmup: 5
+  scheduler: 
+    type: "CosineAnnealingWarmRestarts"
+    args:
+      T_0: 15
+      T_mult: 2
+  

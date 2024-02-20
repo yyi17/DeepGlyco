@@ -1,0 +1,24 @@
+monosaccharides: ["H", "N", "A", "G", "F"]
+
+modifications:
+  Carbamidomethyl: c
+  Oxidation: ox
+
+report_filter:
+
+annotator:
+  peak_matching:
+    tolerance: 20
+    tolerance_unit: ppm
+    criteria: mostintense
+
+  fragments:
+    peptide_fragment_type: ["b", "y"]
+    peptide_fragment_glycan: ["", "$", "N(1)"]
+    peptide_fragment_charge: [1, 2]
+    glycan_fragment_type: ["Y"]
+    glycan_fragment_charge: [1, 2, 3]
+
+spectrum_filter:
+  min_num_peptide_fragments: 5
+  min_num_glycan_fragments: 5

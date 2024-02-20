@@ -1,0 +1,33 @@
+proton:
+  name: Proton
+  mass: 1.00727646687
+H:
+  name: Hydrogen
+  mass: 1.007825035
+2H:
+  name: Deuterium
+  mass: 2.014101779
+C:
+  name: Carbon
+  mass: 12.0
+13C:
+  name: Carbon13
+  mass: 13.00335483
+N:
+  name: Nitrogen
+  mass: 14.003074
+15N:
+  name: Nitrogen15
+  mass: 15.00010897
+O:
+  name: Oxygen
+  mass: 15.99491463
+18O:
+  name: Oxygen18
+  mass: 17.9991603
+P:
+  name: Phosphorous
+  mass: 30.973762
+S:
+  name: Sulfur
+  mass: 31.9720707

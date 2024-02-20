@@ -1,0 +1,48 @@
+modifications:
+  variable_modifications:
+    ac: ac
+    ox: ox
+    ph: p
+    de: de
+    gl: pyg
+    # bi: bi
+    # bu: bu
+    # ci: de
+    # cr: cr
+    # di: di
+    # fo: fo
+    # gl: gg # gl
+    # hy: hy # ox
+    # ma: ma
+    # me: me
+    # ni: ni
+    # pr: pr
+    # su: su
+    # tr: tr
+
+  fixed_modifications:
+    C: c
+
+report_filters:
+  Reverse:
+    '!=': +
+  Potential contaminant:
+    '!=': +
+  Proteins:
+    '!startswith': CON__
+  Score:
+    '>': 40
+  Number of Matches:
+    '>': 1
+  PEP:
+    '<': 0.05
+  Fragmentation:
+    '=': HCD
+  Mass analyzer:
+    '=': FTMS
+  Modified sequence:
+    '!contains': '_\([a-z]+\)[A-Z]\(|\(ph\)'
+
+# fragment_types:
+  # z°: z
+  # z': zp

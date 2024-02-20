@@ -1,0 +1,8 @@
+Y:
+  name: Y
+  mass: 0.0
+  reducing_end: true
+B:
+  name: B
+  mass: 0.0
+  reducing_end: false

@@ -1,0 +1,63 @@
+A:
+  name: Alanine
+  mass: 71.037114
+R:
+  name: Arginine
+  mass: 156.101111
+N:
+  name: Asparagine
+  mass: 114.042927
+D:
+  name: 'Aspartic acid'
+  mass: 115.026943
+C:
+  name: Cysteine
+  mass: 103.009185
+E:
+  name: 'Glutamic acid'
+  mass: 129.042593
+Q:
+  name: 'Glutamine'
+  mass: 128.058578
+G:
+  name: Glycine
+  mass: 57.021464
+H:
+  name: Histidine
+  mass: 137.058912
+I:
+  name: Isoleucine
+  mass: 113.084064
+L:
+  name: Leucine
+  mass: 113.084064
+K:
+  name: Lysine
+  mass: 128.094963
+M:
+  name: Methionine
+  mass: 131.040485
+F:
+  name: Phenylalanine
+  mass: 147.068414
+P:
+  name: Proline
+  mass: 97.052764
+S:
+  name: Serine
+  mass: 87.032028
+T:
+  name: Threonine
+  mass: 101.047679
+U:
+  name: Selenocysteine
+  mass: 150.95363
+W:
+  name: Tryptophan
+  mass: 186.079313
+Y:
+  name: Tyrosine
+  mass: 163.06332
+V:
+  name: Valine
+  mass: 99.068414

@@ -1,0 +1,183 @@
+acK:
+  name: 'Acetyl (K)'
+  unimod: 1
+  mass: 42.01056469
+  composition: 'C H(2) O'
+  amino_acid: K
+ac[^:
+  name: 'Acetyl (Protein N-term)'
+  unimod: 1
+  mass: 42.01056469
+  composition: 'C H(2) O'
+  position: 'protein_n_term'
+am]^:
+  name: 'Amidation (Protein C-term)'
+  unimod: 2
+  mass: -0.984016
+  composition: 'H N O(-1)'
+  position: 'protein_c_term'
+cC:
+  name: 'Carbamidomethyl (C)'
+  unimod: 4
+  mass: 57.02146373
+  composition: 'C H(3) N O'
+  amino_acid: C
+oxM:
+  name: 'Oxidation (M)'
+  unimod: 35
+  mass: 15.9994
+  composition: 'O'
+  amino_acid: M
+pS:
+  name: 'Phospho (S)'
+  unimod: 21
+  mass: 79.979902
+  composition: 'H P O(3)'
+  loss: H3PO4
+  amino_acid: S
+pT:
+  name: 'Phospho (T)'
+  unimod: 21
+  mass: 79.979902
+  composition: 'H P O(3)'
+  amino_acid: T
+  loss: H3PO4
+pY:
+  name: 'Phospho (Y)'
+  unimod: 21
+  mass: 79.979902
+  composition: 'H P O(3)'
+  amino_acid: 'Y'
+pyg<Q:
+  name: 'Gln->pyro-Glu'
+  unimod: 28
+  mass: -17.026549
+  composition: 'H(-3) N(-1)'
+  amino_acid: Q
+  position: 'n_term'
+ggK:
+  name: 'GlyGly (K)'
+  unimod: 121
+  mass: 114.0429
+  composition: 'H(6) C(4) N(2) O(2)'
+  amino_acid: K
+meK:
+  name: 'Methyl (K)'
+  unimod: 34
+  mass: 14.015650
+  composition: 'C H(2)'
+  amino_acid: K
+meR:
+  name: 'Methyl (R)'
+  unimod: 34
+  mass: 14.015650
+  composition: 'C H(2)'
+  amino_acid: R
+me2K:
+  name: 'Dimethyl (K)'
+  unimod: 36
+  mass: 28.031300
+  composition: 'H(4) C(2)'
+  amino_acid: K
+me2R:
+  name: 'Dimethyl (R)'
+  unimod: 36
+  mass: 28.031300
+  composition: 'H(4) C(2)'
+  amino_acid: R
+me3K:
+  name: 'Trimethyl (K)'
+  unimod: 37
+  mass: 42.046950
+  composition: 'C(3) H(6)'
+  amino_acid: K
+me3R:
+  name: 'Trimethyl (R)'
+  unimod: 36
+  mass: 28.031300
+  composition: 'H(4) C(2)'
+  amino_acid: R
+deN:
+  name: 'Deamidated (N)'
+  unimod: 7
+  mass: 0.984015593
+  composition: 'H(-1) N(-1) O'
+  amino_acid: 'N'
+deQ:
+  name: 'Deamidated (Q)'
+  unimod: 7
+  mass: 0.984015593
+  composition: 'H(-1) N(-1) O'
+  amino_acid: 'Q'
+deR:
+  name: 'Deamidated (R)'
+  unimod: 7
+  mass: 0.984015593
+  composition: 'H(-1) N(-1) O'
+  amino_acid: 'R'
+oxP:
+  name: 'Oxidation (P)'
+  unimod: 35
+  mass: 15.9994
+  composition: 'O'
+  amino_acid: P
+bioK:
+  name: 'Biotin (K)'
+  unimod: 3
+  mass: 226.077598
+  composition: 'H(14) C(10) N(2) O(2) S'
+  amino_acid: K
+butK:
+  name: 'Butyryl (K)'
+  unimod: 1289
+  mass: 70.041865
+  composition: 'H(6) C(4) O'
+  amino_acid: K
+croK:
+  name: 'Crotonyl (K)'
+  unimod: 1363
+  mass: 68.026215
+  composition: 'H(4) C(4) O'
+  amino_acid: K
+forK:
+  name: 'Formyl (K)'
+  unimod: 122
+  mass: 27.994915
+  composition: 'C O'
+  amino_acid: K
+gltK:
+  name: 'Glutaryl (K)'
+  unimod: 1848
+  mass: 114.031694
+  composition: 'H(6) C(5) O(3)'
+  amino_acid: K
+hibK:
+  name: 'Hydroxyisobutyryl (K)'
+  unimod: 1849
+  mass: 86.036779
+  composition: 'H(6) C(4) O(2)'
+  amino_acid: K
+malK:
+  name: 'Malonyl (K)'
+  unimod: 747
+  mass: 86.000394
+  composition: 'H(2) C(3) O(3)'
+  amino_acid: K
+prpK:
+  name: 'Propionyl (K)'
+  unimod: 58
+  mass: 56.026215
+  composition: 'H(4) C(3) O'
+  amino_acid: K
+sucK:
+  name: 'Succinyl (K)'
+  unimod: 64
+  mass: 100.016044
+  composition: 'H(4) C(4) O(3)'
+  amino_acid: K
+nitY:
+  name: 'Nitro (Y)'
+  unimod: 354
+  mass: 44.985078
+  composition: 'H(-1) N O(2)'
+  amino_acid: 'Y'

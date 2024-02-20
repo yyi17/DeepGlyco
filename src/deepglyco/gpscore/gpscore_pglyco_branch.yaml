@@ -1,0 +1,36 @@
+modifications:
+  Carbamidomethyl: c
+  Acetyl: ac
+  Oxidation: ox
+
+report_filter:
+  Rank:
+    '=': 1
+  GlyDecoy:
+    '=': 0
+  PepDecoy:
+    '=': 0
+  TotalFDR:
+    '<': 0.01
+  GlycanComposition:
+    '!contains': '^H\([0-9]+\)N\(2\)$'
+
+annotator:
+  peak_matching:
+    tolerance: 20
+    tolerance_unit: ppm
+    criteria: mostintense
+
+  fragments:
+    peptide_fragment_type: ["b", "y"]
+    peptide_fragment_glycan: ["", "$", "N(1)"]
+    peptide_fragment_charge: [1, 2]
+    glycan_fragment_type: ["Y", "B"]
+    glycan_reducing_end_fragment_charge: [1, 2, 3]
+    glycan_branch_fragment_charge: [1]
+
+spectrum_filter:
+  min_num_peptide_fragments: 3
+  min_num_fragments:
+    Y: 5
+    B: 2
